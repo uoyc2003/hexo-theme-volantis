@@ -1,0 +1,41 @@
+// ===========================
+// 样式覆盖
+// ===========================
+
+// 修改链接的下划线样式
+.article a:not([class]):not([data-fancybox]), .content > a {
+  position: relative;
+  text-decoration: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    background: #ff5722;
+    transform: scale(0);
+    transition: all 0.5s;
+  }
+
+  &:hover:before {
+    transform: scale(1);
+  }
+}
+
+// 修改标题的样式
+article#post {
+  & > h1, h2, h3 {
+    font-weight: 700;
+    background: linear-gradient(to bottom, transparent 60%, rgba(189, 202, 219, 0.3) 0) no-repeat;
+    display: initial;
+    width: auto;
+    border-bottom: none;
+  }
+
+  & > h3 {
+    font-weight: 500;
+    position: initial;
+  }
+}
