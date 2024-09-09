@@ -12,10 +12,8 @@ let titles = postBody.querySelectorAll("h2, h3");
 
 for (let i = 0; i < titles.length; i++) {
     let next = titles[i].nextElementSibling;
-    if (next) {
-        if (next.tagName === "TABLE") {
-            const p = document.createElement("p");
-            postBody.insertBefore(p, next);
-        }
+    if (next && next.tagName === "TABLE") {
+        const p = document.createElement("p");
+        postBody.insertBefore(p, next);
     }
 }
