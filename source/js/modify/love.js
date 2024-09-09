@@ -1,4 +1,8 @@
-!function (e, t, a) {
+// ===========================
+// 页面点击小红心
+// ===========================
+
+!function (e, t) {
     function n() {
         c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
             o(),
